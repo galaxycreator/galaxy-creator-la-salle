@@ -1,26 +1,64 @@
-Engineering materials
-====
+WRO Future Engineers – Autonomous Vehicle
+Overview
+This repository contains the engineering materials for our autonomous vehicle developed for the WRO Future Engineers Competition 2025. The vehicle is designed using 3D-printed structural components, LEGO gear and support systems, and is powered by an Arduino UNO microcontroller. It includes all necessary documentation, code, schematics, and media files to showcase the design, construction, and functionality of our self-driving robot.
 
-This repository contains engineering materials of a self-driven vehicle's model participating in the WRO Future Engineers competition in the season 2022.
+📁 Repository Structure
+t-photos/: Two photos of the team (one official and one fun group picture).
 
-## Content
+v-photos/: Six images of the vehicle (front, back, left, right, top, and bottom views).
 
-* `t-photos` contains 2 photos of the team (an official one and one funny photo with all team members)
-* `v-photos` contains 6 photos of the vehicle (from every side, from top and bottom)
-* `video` contains the video.md file with the link to a video where driving demonstration exists
-* `schemes` contains one or several schematic diagrams in form of JPEG, PNG or PDF of the electromechanical components illustrating all the elements (electronic components and motors) used in the vehicle and how they connect to each other.
-* `src` contains code of control software for all components which were programmed to participate in the competition
-* `models` is for the files for models used by 3D printers, laser cutting machines and CNC machines to produce the vehicle elements. If there is nothing to add to this location, the directory can be removed.
-* `other` is for other files which can be used to understand how to prepare the vehicle for the competition. It may include documentation how to connect to a SBC/SBM and upload files there, datasets, hardware specifications, communication protocols descriptions etc. If there is nothing to add to this location, the directory can be removed.
+video/: video.md file containing the link to our driving demo video.
 
-## Introduction
+schemes/: Electromechanical diagrams in JPG, PNG, or PDF showing how components are connected.
 
-_This part must be filled by participants with the technical clarifications about the code: which modules the code consists of, how they are related to the electromechanical components of the vehicle, and what is the process to build/compile/upload the code to the vehicle’s controllers._
+src/: Arduino code controlling the motors, sensors, and logic.
 
-## How to prepare the repo based on the template
+models/: 3D model files used to print the vehicle's structure and mounts.
 
-_Remove this section before the first commit to the repository_
+other/: Additional files such as build photos, hardware specs, battery info, and connection instructions.
 
-1. Clone this repo by using the `git clone` functionality.
-2. Remove `.git` directory
-3. [Initialize a new public repository on GitHub](https://github.com/new) by following instructions from "create a new repository on the command line" section (appeared after pressing "Create repository" button).
+⚙️ Technical Introduction
+The vehicle combines custom-designed 3D-printed parts with LEGO gear systems to form a functional and modular robotic platform. It features a drive system, a steering mechanism, onboard sensors, and a power system all managed by an Arduino UNO.
+
+🔧 Modules
+motor_control.ino: Controls a DC motor for propulsion and a servo motor for steering.
+
+ultrasonic.ino: Handles distance measurements from ultrasonic sensors.
+
+main.ino: Integrates all modules and controls behavior based on sensor input.
+
+🔩 Electromechanical Design
+Chassis: Fully 3D-printed, designed to house all components securely, including the electronics and internal battery pack.
+
+Supports: LEGO elements are used as modular supports and for integrating gear mechanisms.
+
+Gearing: A system of LEGO gears transmits torque from the DC motor to the drive wheels.
+
+Steering: A servo motor turns the front axle using a 3D-printed linkage system.
+
+Sensors: Two ultrasonic sensors detect obstacles and measure distances.
+
+Power Supply: The robot is powered by a rechargeable battery pack mounted inside the chassis.
+
+Controller: All logic is run by an Arduino UNO, connected to motors and sensors through the chassis.
+
+🧪 Build & Execution Instructions
+Open the .ino files in the Arduino IDE.
+
+Connect your Arduino UNO via USB to your computer.
+
+Under the Tools menu, select the correct board (Arduino UNO) and port.
+
+Press Upload to flash the code.
+
+Disconnect USB and power the vehicle via the internal battery to begin autonomous operation.
+
+🎯 Project Objective
+Our objective is to design a reliable, fully autonomous vehicle using a hybrid structure made of 3D-printed elements and LEGO mechanics, controlled by Arduino-based logic. This allows flexibility in design, rapid prototyping, and a clear demonstration of STEM learning.
+
+🔍 Additional Notes
+The combination of LEGO gears and custom-printed parts enhances mechanical precision.
+
+The battery pack is safely integrated inside the chassis for optimal space usage.
+
+All modules are modular and replaceable, promoting ease of maintenance and iteration.
