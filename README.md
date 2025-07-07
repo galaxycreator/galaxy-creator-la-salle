@@ -2,7 +2,7 @@ WRO Future Engineers – Galaxy Creators
 
 Overview
 
-This repository contains the engineering materials for our autonomous vehicle developed for the WRO Future Engineers Competition 2025. The vehicle is designed using 3D-printed structural components, LEGO gear and support systems, and is powered by an Arduino UNO microcontroller. It includes all necessary documentation, code, schematics, and media files to showcase the design, construction, and functionality of our self-driving robot.
+This repository contains the engineering materials for our autonomous vehicle developed for the WRO Future Engineers Competition 2025. The vehicle is designed using 3D-printed structural components, LEGO gear and support systems, and is powered by an Arduino Mega 2560 microcontroller. It includes all necessary documentation, code, schematics, and media files to showcase the design, construction, and functionality of our self-driving robot.
 
 📁 Repository Structure
 
